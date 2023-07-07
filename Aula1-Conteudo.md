@@ -27,7 +27,8 @@ Agora você pode usar a tag de título e a de parágrafo:
 
 Muito massa, né?! Ver teu código já pronto no navegador, dá vontade até de hospedar esse site na net com meu nome como título e enviar pras empresas: EU SEI PROGRAMAR WEB, ME CONTRATEM gigante na tela, enfim.
 
-Agora visite o site: [Motherfucking WebSite](motherfuckingwebsite.com)
+Agora visite o site: [Motherfucking WebSite](motherfuckingwebsite.com).
+
 Que obra de arte.
 
 Após essa visita ao incrível site, você pode visitar outros sites que são repositórios de programação web com HTML 1.0 ou um pouco mais avançado mas de forma manual, que são:
