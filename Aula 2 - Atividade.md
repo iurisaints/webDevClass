@@ -31,5 +31,5 @@ Compartilhe seu site comigo e com os outros alunos da turma, pelo link bit.ly/fr
 *Dicas:*
 
 Use um editor de código para escrever o código HTML caso possível, mas vemos em sala de aula que é possível criar até a partir de um Bloco de Notas.
-
+Caso quiser desenvolver de forma online, utilize o [Codesandbox](https://codesandbox.io/)
 Boa sorte!
