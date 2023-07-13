@@ -23,7 +23,7 @@ Escreva o código HTML para seu site. O código HTML deve incluir as seguintes t
 <p>
 ```
 
-O CSS iremos inserir após a estrutura do HTML feita, então **não utilizem** a tag <style> nem iniciem um arquivo .css como <stylesheet> de vocês.
+O CSS iremos inserir após a estrutura do HTML feita, então **não utilizem** a tag <style> nem iniciem um arquivo .css como stylesheet de vocês.
 
 Teste seu site em diferentes navegadores.
 Compartilhe seu site comigo e com os outros alunos da turma, pelo link bit.ly/frontendTDS na pasta Aula: 13/07
