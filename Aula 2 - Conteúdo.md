@@ -3,12 +3,9 @@
 # HTML5 - árvore do documento
 
 Todo documento HTML é representado por uma estrutura de árvore.
-
-![árvore do documento html](img/html-tree.png)
-
 Uma árvore é formada por **nodos**. Cada nodo representa um elemento do documento HTML.
 
-Este é o código HTML da árvore acima.
+Este é o código HTML da árvore.
 
 ``` html
 <html>
