@@ -57,7 +57,7 @@ O resultado é:
 ><html>
 >
 >    <head>
->        <title>Título do documento/página</title>
+>        <h1>Título do documento/página</h1>
 >    </head>
 >
 >    <body>
