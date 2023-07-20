@@ -5,7 +5,7 @@ Agora você pode utilizar o código base para seu site que é:
 <!DOCTYPE html>
 <html>
 <head>
-     <title>Sobre Nós</title>
+     <title>Página Principal</title>
 </head>
 <body>
     <button onclick="window.location.href='./index.html'"> Página Principal </button>
