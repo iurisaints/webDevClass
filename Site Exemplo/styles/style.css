@@ -1,0 +1,40 @@
+#menu {
+    text-align: center;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+}
+figure{
+    justify-content: center;
+}
+
+#titulo {
+    text-align: center;
+}
+
+#tenisInicio{
+    text-align: center; 
+}
+
+#fotoInicial{
+    width: 300px;
+    height: 250px;
+}
+
+#produtos1, #produtos2{
+    display: inline;
+}
+
+#prods{
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption{
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    text-align: center;
+}
