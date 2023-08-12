@@ -1,0 +1,139 @@
+/* Geral */
+#menu{
+    text-align: center;
+    background-color: rgb(131, 188, 131);
+}
+
+img#logo{
+    border-radius: 15%;
+    width: 200px;
+    height: 200px;
+}
+
+button#menu{
+    width: 70px;
+    height: 70px;
+    display: inline;
+    background-color: azure;
+}
+
+/* Página principal */
+body#home{
+    background-color: rgb(91, 128, 91);
+}
+
+#homeimg{
+    border-radius: 10%;
+    width: 350px;
+    height: 233.5px;
+}
+
+#homeimgtwo{
+    border-radius: 10%;
+    width: 200px;
+    height: 233.5px;
+}
+
+body{
+    margin:40px auto;
+    line-height:1.6;
+    font-size: 1.1em;
+    border:10px solid;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: "FreePixel";
+  }
+
+/* Produtos */
+#product{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+}
+
+/* Sobre Nós */
+#aboutimg{
+    border-radius: 10%;
+    width: 410px;
+    height: 233.5px;
+}
+
+#aboutimg2{
+    border-radius: 10%;
+    width: 410px;
+    height: 233.5px;
+}
+
+footer{
+    background-color: rgb(131, 188, 131);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CARROSSEL DE IMAGENS*/
+
+.slider{
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+img#slide1, img#slide2, img#slide3{
+    width: 300px;
+    height: 300px;
+} 
+
+.slider li{
+    list-style: none;
+    position: absolute;
+}
+
+.slider img{
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
+}
+
+.slider input{
+    display: none;
+}
+
+.slider label{
+    background-color: black;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label{
+    left: 10px;
+}
+.slider li:nth-child(2) label{
+    left: 40px;
+}
+.slider li:nth-child(3) label{
+    left: 70px;
+}
+
+.slider img{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
