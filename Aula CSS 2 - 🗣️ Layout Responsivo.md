@@ -5,6 +5,11 @@ Neste guia, vamos explorar o conceito de layout responsivo em CSS, que permite q
 ## Design Responsivo
 
 O design responsivo garante que seu site ou aplicativo se adapte a dispositivos de diferentes tamanhos, como smartphones, tablets e desktops. Isso melhora a experiência do usuário e a acessibilidade.
+Para isso funcionar, você precisa inserir em cada página HTML esse código:
+
+```html
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+```
 
 ### Media Queries
 
