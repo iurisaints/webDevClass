@@ -58,6 +58,7 @@ As media queries permitem aplicar estilos específicos com base nas característ
     }
   }
 </style>
+<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
 </head>
 <body>
 
