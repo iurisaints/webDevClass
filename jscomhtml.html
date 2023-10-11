@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Tela de Login</h1>
+        <form>
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" placeholder="Seu nome de usuário" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" placeholder="Sua senha" required>
+
+            <button type="button" onclick="login()">Entrar</button>
+        </form>
+    </div>
+
+    <div id="login-result"></div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Simulação de verificação de login
+            if (username === 'usuario' && password === 'senha') {
+                document.getElementById('login-result').innerHTML = 'Login bem-sucedido!';
+            } else {
+                document.getElementById('login-result').innerHTML = 'Login falhou. Verifique suas credenciais.';
+            }
+        }
+    </script>
+</body>
+</html>
