@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tela de Login</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="login" id="login-container">
+        <h1>Login</h1>
+        <form>
+            <label for="login-email">Email: </label>
+            <input type="email" id="login-email" placeholder="Seu email" required>
+
+            <label for="login-senha">Senha: </label>
+            <input type="password" id="login-senha" placeholder="Sua senha" required>
+
+            <button type="button" onclick="login()"> Entrar </button>
+        </form>
+    </div>
+
+    <div id="result"></div>
+    <br>
+    <p>Não tenho cadastro</p>
+    <button onclick="window.location.href='/cadastro.html'"> Cadastro </button>
+</body>
+</html>

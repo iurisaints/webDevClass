@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tela de Cadastro</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="register" id="register-container">
+        <h1>Cadastro</h1>
+        <form>
+            <label for="register-email">Email: </label>
+            <input type="email" id="register-email" placeholder="Seu email" required>
+
+            <label for="register-senha">Senha: </label>
+            <input type="password" id="register-senha" placeholder="Sua senha" required>
+
+            <button type="button" onclick="register()"> Cadastrar </button>
+        </form>
+    </div>
+    
+    <div id="result"></div>
+    <br>
+    <button onclick="window.location.href='/index.html'"> Login </button>
+</body>
+</html>
