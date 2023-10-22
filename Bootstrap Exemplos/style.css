@@ -1,0 +1,47 @@
+/* Estilo para o body */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo para o container do carousel */
+#carouselExample {
+    margin-top: 20px;
+    max-width: 400px; /* Defina a largura máxima desejada */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo para os botões */
+.btn {
+    margin: 5px;
+}
+
+/* Estilo para o container dos botões */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Estilo para o formulário responsivo */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo para o rodapé */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
