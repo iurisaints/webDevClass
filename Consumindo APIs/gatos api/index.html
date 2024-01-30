@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gallery with Cat Facts</title>
+</head>
+<body>
+    <!-- IMAGENS PELA CAT AS A SERVICE -->
+<div class="gallery">
+    <div class="image" onclick="showCatFact('photo1')">
+        <img src="https://cataas.com/cat" alt="Cat 1">
+    </div>
+    <div class="image" onclick="showCatFact('photo2')">
+        <img src="https://cataas.com/cat/gif" alt="Cat 2">
+    </div>
+    <div class="image" onclick="showCatFact('photo3')">
+        <img src="https://cataas.com/cat/says/API DE GATOS DO TDS" alt="Cat 3">
+    </div>
+</div>
+
+<div class="message" id="catFactMessage">
+    <!-- A mensagem do fato de gato será exibida aqui -->
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
