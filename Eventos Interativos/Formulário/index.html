@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário com Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Formulário de Contato</h2>
+
+<form id="contactForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" required><br>
+    <span class="error-message" id="nameError">Por favor, insira seu nome.</span><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" required><br>
+    <span class="error-message" id="emailError">Por favor, insira um email válido.</span><br>
+
+    <button type="submit">Enviar</button>
+</form>
+<script src="script.js"></script>
+
+</body>
+</html>

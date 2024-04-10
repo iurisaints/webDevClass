@@ -1,0 +1,9 @@
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+}
+.error-message {
+    color: red;
+    display: none;
+}
