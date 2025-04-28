@@ -1,0 +1,138 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "API de Estacionamento",
+      "version": "1.0.0",
+      "description": "Documentação da API para cadastro de usuários, login e gestão de vagas."
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3030",
+        "description": "Servidor local"
+      }
+    ],
+    "paths": {
+      "/cadastro": {
+        "post": {
+          "summary": "Cadastro de usuário",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "username": { "type": "string" },
+                    "password": { "type": "string" },
+                    "email": { "type": "string" },
+                    "placa": { "type": "string" },
+                    "cor": { "type": "string" },
+                    "modelo": { "type": "string" }
+                  },
+                  "required": ["username", "password", "email", "placa", "cor", "modelo"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Usuário cadastrado com sucesso"
+            },
+            "500": {
+              "description": "Erro ao cadastrar usuário"
+            }
+          }
+        }
+      },
+      "/login": {
+        "post": {
+          "summary": "Login de usuário",
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "email": { "type": "string" },
+                    "password": { "type": "string" }
+                  },
+                  "required": ["email", "password"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Login efetuado ou erro de credenciais"
+            },
+            "500": {
+              "description": "Erro no servidor"
+            }
+          }
+        }
+      },
+      "/vagas": {
+        "get": {
+          "summary": "Lista todas as vagas",
+          "responses": {
+            "200": {
+              "description": "Lista de vagas"
+            },
+            "500": {
+              "description": "Erro ao buscar vagas"
+            }
+          }
+        }
+      },
+      "/vagas/{vagaId}/ocupar": {
+        "post": {
+          "summary": "Ocupar uma vaga",
+          "parameters": [
+            {
+              "name": "vagaId",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "integer"
+              },
+              "description": "ID da vaga a ser ocupada"
+            }
+          ],
+          "requestBody": {
+            "required": true,
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "userId": { "type": "integer" }
+                  },
+                  "required": ["userId"]
+                }
+              }
+            }
+          },
+          "responses": {
+            "200": {
+              "description": "Vaga ocupada com sucesso"
+            },
+            "500": {
+              "description": "Erro ao ocupar vaga"
+            }
+          }
+        }
+      },
+      "/api/hello": {
+        "get": {
+          "summary": "Rota de teste Hello World",
+          "responses": {
+            "200": {
+              "description": "Mensagem de Olá mundo"
+            }
+          }
+        }
+      }
+    }
+  }
+  
