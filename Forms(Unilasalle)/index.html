@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Perfil Dev</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form class="formulario-dev">
+        <h2>Pesquisa de Perfil</h2>
+
+        <div class="campo-grupo">
+            <label for="nome">Nome Completo</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="email">E-mail Profissional</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="experiencia">Tempo de experiência com código (anos)</label>
+            <input type="number" id="experiencia" name="experiencia" min="0" required>
+        </div>
+
+        <div class="campo-grupo">
+            <p class="label-falso">Sistema Operacional preferido</p>
+            <input type="radio" id="os-win" name="os" value="windows">
+            <label for="os-win" class="label-inline">Windows</label>
+            
+            <input type="radio" id="os-mac" name="os" value="macos">
+            <label for="os-mac" class="label-inline">macOS</label>
+            
+            <input type="radio" id="os-lin" name="os" value="linux">
+            <label for="os-lin" class="label-inline">Linux</label>
+        </div>
+
+        <div class="campo-grupo">
+            <p class="label-falso">Áreas de atuação ou interesse</p>
+            <input type="checkbox" id="area-front" name="area" value="frontend">
+            <label for="area-front" class="label-inline">Frontend</label><br>
+            
+            <input type="checkbox" id="area-back" name="area" value="backend">
+            <label for="area-back" class="label-inline">Backend</label><br>
+
+            <input type="checkbox" id="area-mobile" name="area" value="mobile">
+            <label for="area-mobile" class="label-inline">Mobile</label>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="linguagem">Linguagem de programação principal</label>
+            <select id="linguagem" name="linguagem">
+                <option value="">Selecione uma opção...</option>
+                <option value="javascript">JavaScript / TypeScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="csharp">C#</option>
+                <option value="php">PHP</option>
+            </select>
+        </div>
+
+        <div class="campo-grupo">
+            <label for="desafio">Relato sobre o maior desafio atual no desenvolvimento</label>
+            <textarea id="desafio" name="desafio" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Enviar Respostas</button>
+    </form>
+
+</body>
+</html>
