@@ -1,0 +1,105 @@
+/* 1. Reset e Box Model Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 40px 20px;
+}
+
+/* 2. Estrutura Principal do Formulário */
+.formulario-dev {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-dev h2 {
+    margin-bottom: 25px;
+    color: #333333;
+}
+
+.campo-grupo {
+    margin-bottom: 20px;
+}
+
+/* 3. Tipografia e Rótulos */
+label, .label-falso {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444444;
+}
+
+/* Exceção para labels de radio e checkbox ficarem na mesma linha do botão */
+.label-inline {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+/* 4. Estilização dos Inputs, Select e Textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 5. Feedback Visual de Interação (Usabilidade) */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+}
+
+/* 6. Estilização do Botão */
+button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #004494;
+}
+
+/* 7. Responsividade (Media Queries) */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px; /* Reduz espaçamento externo no mobile */
+    }
+
+    .formulario-dev {
+        padding: 20px; /* Reduz espaçamento interno do formulário */
+        border-radius: 0; /* Opcional: remove arredondamento em telas muito estreitas */
+    }
+
+    button[type="submit"] {
+        padding: 18px; /* Aumenta a área de toque para dedos */
+        font-size: 18px;
+    }
+}
